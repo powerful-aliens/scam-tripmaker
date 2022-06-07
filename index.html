@@ -23,8 +23,8 @@
   <!-- Navigation-->
   <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
-      <a class="navbar-brand" href="#!">Start Bootstrap</a>
-      <a class="btn btn-primary" href="#signup">Sign Up</a>
+      <div class="navbar-brand">Travelly</div>
+<!--      <a class="btn btn-primary" href="#signup">Sign Up</a>-->
     </div>
   </nav>
   <!-- Masthead-->
@@ -35,7 +35,7 @@
           <div class="text-center text-white">
             <!-- Page heading-->
             <h1 class="mb-5">
-              Generate more leads with a professional landing page!
+              Travelly - an automated travel agency. We take all the planning job - you take all the travel joy.
             </h1>
             <!-- Signup form-->
             <!-- * * * * * * * * * * * * * * *-->
@@ -45,23 +45,41 @@
             <!-- To make this form functional, sign up at-->
             <!-- https://startbootstrap.com/solution/contact-forms-->
             <!-- to get an API token!-->
-            <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <form class="form-subscribe" id="contactForm" onsubmit="alert('alert')" data-sb-form-api-token="API_TOKEN">
               <!-- Email address input-->
               <div class="row">
-                <div class="col">
-                  <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Email Address"
-                    data-sb-validations="required,email" />
-                  <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">
-                    Email Address is required.
-                  </div>
-                  <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">
-                    Email is not valid.
+                <div class="form-group mt-md-3">
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">First day:</span>
+                    <input type="date" class="form-control" id="first-day-inp">
                   </div>
                 </div>
-                <div class="col-auto">
-                  <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">
-                    Submit
-                  </button>
+                <div class="form-group mt-md-3">
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Last day:</span>
+                    <input type="date" class="form-control" id="last-day-inp">
+                  </div>
+                </div>
+                <div class="input-group mt-md-3">
+                  <input type="text" class="form-control" placeholder="Target city" aria-label="Direction" id="city-to-inp">
+                </div>
+                <div class="input-group mt-md-3">
+                  <input type="text" class="form-control" placeholder="Your city" aria-label="Direction" id="city-from-inp">
+                </div>
+                <div class="input-group mt-md-3">
+                  <input type="text" class="form-control" placeholder="Email" aria-label="Email" id="email-inp">
+                </div>
+                <div class="form-floating mt-md-3">
+                  <textarea class="form-control" placeholder="Leave a comment here"
+                            style="height: 100px" id="additional-inp"></textarea>
+                  <label for="additional-inp" style="color: gray">If you want us to plan any specific aspect of your
+                  journey - tell us about it in this field</label>
+                </div>
+                <div class="col-auto mt-md-3 align-content-center">
+                  <input class="btn btn-primary btn-lg disabled" value="Get a detailed plan" id="submitButton"
+                         type="submit" onclick="onSubmitButtonPressed()">
+
+                  </input>
                 </div>
               </div>
               <!-- Submit success message-->
@@ -70,10 +88,12 @@
               <!-- has successfully submitted-->
               <div class="d-none" id="submitSuccessMessage">
                 <div class="text-center mb-3">
-                  <div class="fw-bolder">Form submission successful!</div>
-                  <p>To activate this form, sign up at</p>
-                  <a class="text-white"
-                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                  <div class="fw-bolder">Thank you for you submission. We are very sorry,
+                    but currently we cannot help you with planning your travel - our company is a startup which is
+                  on the very first stage and we hope to grow and develop this tool to help everyone with planning
+                  their travels. We very appreciate that you spent time reading our website and filled the form -
+                  that tells us that we develop a really important tool. If you want to discuss with us any
+                  ideas, features or problems about this app - write directly to our <a href="mailto:andrusov.n@gmail.com" style="color: white">email</a> - we will be very thankful.</div>
                 </div>
               </div>
               <!-- Submit error message-->
