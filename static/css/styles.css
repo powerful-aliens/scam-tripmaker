@@ -2930,6 +2930,7 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .input-group > .form-control,
@@ -12307,7 +12308,7 @@ fieldset:disabled .btn {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("static/assets/airplane.jpg") no-repeat center center;
+  background: url("../assets/airplane.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
