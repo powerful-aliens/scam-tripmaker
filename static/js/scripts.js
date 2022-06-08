@@ -34,5 +34,8 @@ function onSubmitButtonPressed() {
 
   xhr.send(data);
 
-  return true;
+  //alert(document.getElementById("sorry-text").innerText)
+  document.getElementById("sorry-text").className = "alert alert-warning d-block md-mt-3"
+
+  //return true;
 }

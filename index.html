@@ -26,13 +26,14 @@
       <a class="btn btn-primary" href="#signup">Start using now</a>
     </div>
   </nav>
+
   <header class="masthead">
     <div class="container position-relative">
       <div class="row justify-content-center">
         <div class="col-xl-6">
           <div class="text-center text-white">
             <h1>
-              We are automated travel agency. We take all the planning job — you take all the travel joy.
+              Travelly — an automated travel agency. We take all the planning job — you take all the travel joy.
             </h1>
             <form class="form-subscribe" id="contactForm">
               <div>
@@ -65,26 +66,24 @@
                   <label for="additional-inp" style="color: gray">If you want us to plan any specific aspect of your
                     journey — tell us about it in this field</label>
                 </div>
+                <div class="alert alert-warning d-none" role="alert" id="sorry-text">
+                  Thank you for you submission. We are very sorry,
+                  but currently we cannot help you with planning your travel — our company is a startup
+                  on the very first stage and we hope to grow and develop this tool to help everyone with planning
+                  their travels. We very appreciate that you spent time reading our website and filled the form -
+                  that tells us that we develop a really important tool. If you want to discuss with us any
+                  ideas, features or problems about this app — write directly to our <a
+                        href="mailto:andrusov.n@gmail.com">email</a> — we will be very thankful.
+                </div>
                 <div class="input-group mt-md-3 align-content-center container"
                   style="padding-left: 100px; padding-right: 100px;">
-                  <button class="col btn btn-primary btn-lg" id="submitButton" type="submit"
+                  <button class="col btn btn-primary btn-lg" id="submitButton" type="button"
                     onclick="onSubmitButtonPressed()">
                     Get a detailed plan
                   </button>
                 </div>
               </div>
-              <div class="d-none" id="submitSuccessMessage">
-                <div class="text-center mb-3">
-                  <div class="fw-bolder">Thank you for you submission. We are very sorry,
-                    but currently we cannot help you with planning your travel — our company is a startup which is
-                    on the very first stage and we hope to grow and develop this tool to help everyone with planning
-                    their travels. We very appreciate that you spent time reading our website and filled the form -
-                    that tells us that we develop a really important tool. If you want to discuss with us any
-                    ideas, features or problems about this app — write directly to our <a
-                      href="mailto:andrusov.n@gmail.com" style="color: white">email</a> — we will be very thankful.
-                  </div>
-                </div>
-              </div>
+
               <div class="d-none" id="submitErrorMessage">
                 <div class="text-center text-danger mb-3">
                   Error sending message!
