@@ -4,11 +4,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <meta name="google-site-verification" content="bN_n9aLpiYFzBDHlPF5XWO936aykTzlfTyD0FDDUi-o" />
+  <meta name="description" content="An automated travel agency. We take all the planning job, you take all the travel joy!"/>
+  <meta name="author" content="powerful-aliens startup team" />
+  <meta name="google-site-verification" content="L7_ZJslRUBCX3fhRQP29Ll_dtpAPW8l0duGyoPymxI8" />
+  <meta name="yandex-verification" content="b31ffc0e468469be" />
   <title>Travelly</title>
-  <link rel="icon" type="image/x-icon" href="static/assets/logo.png" />
+  <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
     type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
@@ -32,16 +33,16 @@
           height="64px" />
         Travelly — plan faster
       </a>
-      <a class="btn btn-primary" href="#signup">Start using now</a>
     </div>
   </nav>
+
   <header class="masthead">
     <div class="container position-relative">
       <div class="row justify-content-center">
         <div class="col-xl-6">
           <div class="text-center text-white">
             <h1>
-              We are automated travel agency. We take all the planning job — you take all the travel joy.
+              Travelly — an automated travel agency. We take all the planning job — you take all the travel joy.
             </h1>
             <form class="form-subscribe" id="contactForm">
               <div>
@@ -74,26 +75,24 @@
                   <label for="additional-inp" style="color: gray">If you want us to plan any specific aspect of your
                     journey — tell us about it in this field</label>
                 </div>
+                <div class="alert alert-warning d-none" role="alert" id="sorry-text">
+                  Thank you for you submission. We are very sorry,
+                  but currently we cannot help you with planning your travel — our company is a startup
+                  on the very first stage and we hope to grow and develop this tool to help everyone with planning
+                  their travels. We very appreciate that you spent time reading our website and filled the form -
+                  that tells us that we develop a really important tool. If you want to discuss with us any
+                  ideas, features or problems about this app — write directly to our <a
+                        href="mailto:most.powerful.aliens@gmail.com">email</a> — we will be very thankful.
+                </div>
                 <div class="input-group mt-md-3 align-content-center container"
                   style="padding-left: 100px; padding-right: 100px;">
-                  <button class="col btn btn-primary btn-lg" id="submitButton" type="submit"
+                  <button class="col btn btn-primary btn-lg" id="submitButton" type="button"
                     onclick="onSubmitButtonPressed()">
                     Get a detailed plan
                   </button>
                 </div>
               </div>
-              <div class="d-none" id="submitSuccessMessage">
-                <div class="text-center mb-3">
-                  <div class="fw-bolder">Thank you for you submission. We are very sorry,
-                    but currently we cannot help you with planning your travel — our company is a startup which is
-                    on the very first stage and we hope to grow and develop this tool to help everyone with planning
-                    their travels. We very appreciate that you spent time reading our website and filled the form -
-                    that tells us that we develop a really important tool. If you want to discuss with us any
-                    ideas, features or problems about this app — write directly to our <a
-                      href="mailto:andrusov.n@gmail.com" style="color: white">email</a> — we will be very thankful.
-                  </div>
-                </div>
-              </div>
+
               <div class="d-none" id="submitErrorMessage">
                 <div class="text-center text-danger mb-3">
                   Error sending message!
@@ -199,7 +198,7 @@
             <img class="img-fluid rounded-circle mb-3" src="static/assets/hotel-squared.jpg" alt="..." />
             <h5>Hotels</h5>
             <p class="font-weight-light mb-0">
-              Hotels with the best price-quality ratio that are available in your dates
+              Hotels with the best price-quality ratio that are available on your dates
             </p>
           </div>
         </div>
